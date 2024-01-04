@@ -58,5 +58,7 @@ users = xata.bulk_insert("Users",[
 st.markdown('''
 It is possible to provide IDs for each of the records. If records with the same IDs already exist, the bulk operation is cancelled and an error is returned.
 file and file[] (file array) columns are not permitted in bulk requests.
+
+For more information, see the [Xata API docs](https://xata.io/docs/sdk/insert).
 ''')
 
