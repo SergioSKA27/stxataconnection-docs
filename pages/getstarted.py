@@ -3,7 +3,7 @@ import streamlit as st
 st.set_page_config(layout="wide",
 initial_sidebar_state="collapsed", page_title="Streamlit Xata Connection")
 
-st.title('Getting Started with st_xata_connection')
+st.title('Getting Started with st_xatadb_connection')
 
 st.markdown('''
 ---
@@ -18,7 +18,7 @@ st.markdown('''
 
 - Install Streamlit by running `pip install streamlit`.
 
-- Install st_xata_connection by running `pip install st-xata-connection`.
+- Install st_xata_connection by running `pip install st-xatadb-connection`.
 
 
 ## 2. Configure your Xata Credentials
@@ -40,12 +40,11 @@ You could also use the the `st.session_state` object to store the connection obj
 
 st.code("""
 import streamlit as st
-from st_xata_connection import XataConnection
+from st_xatadb_connection import XataConnection
 
 xata = st.connection('xata', type=XataConnection)
 
 """,language='python')
-
 
 st.markdown('''
 ## 4. Query your Xata.io Database
@@ -56,7 +55,6 @@ Use the `xata.query()` function to query your Xata.io database.
 st.code("""
 results = xata.query("Table_Name")
 """,language='python')
-
 
 st.markdown('''
 ## 5. Display your Query Results
@@ -110,7 +108,6 @@ delete_response = xata.delete("Table_Name", "rec_c8hnbch26un1nl0rthkg")
 
 """,language='python')
 
-
 st.markdown('''
 ## 7. Working with files
 
@@ -131,7 +128,6 @@ Now you can download the file from your Xata database like this:
 st.code("""
 download_response = xata.get_file("Table_Name", "rec_c8hnbch26un1nl0rthkg", "column_name")
 """,language='python')
-
 
 st.markdown('''
 ## 8. Transactions
@@ -159,7 +155,6 @@ st.markdown('''
 Note that the `transaction()` function takes a list of operations as an argument. Each operation is a dictionary that contains
 the type of operation and the operation-specific arguments. The supported operations are `insert`, `update`, `get`, and `delete`.
 ''')
-
 
 st.markdown('''
 ## 9. SQL Queries
