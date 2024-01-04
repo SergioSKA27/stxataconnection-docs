@@ -37,9 +37,13 @@ data = xata.query("{table_name}", {
     language="python",
 )
 
+st.markdown('''
+See more details about the query parameters in the [API reference](https://xata.io/docs/sdk/get).
+
+''')
 
 st.markdown(
-    "All the requests are optional, so the simplest query request looks like this:"
+    "All the parameters are optional, so the simplest query request looks like this:"
 )
 st.code(
     """
@@ -93,58 +97,51 @@ record = xata.get("Table_Name", "my_id")
 )
 
 
-st.markdown(
-    """
-## Columns Selection
+st.subheader('Pagination')
 
-By default, the Query API returns all columns of the queried table. For link columns, only the ID column of the linked
-records is included in the response. You can use column selection to both reduce the number of columns returned, and to
-include columns from linked tables. It's worth noting that the special columns id, xata.version, xata.createdAt and
-xata.updatedAt are always returned, even if they are not explicitly requested.
+st.markdown('''
 
-For example, if you are only interested in the name and the city of the user, you can make a request like this:
-"""
-)
+You can paginate your results using the `page` parameter in your query request. With pagination,
+you can retrieve a subset of your data, which is useful when working with large datasets.
 
-st.code(
-    """
-users = xata.query("Users", {
-  "columns": ["name", "city"]
-})
-""",
-    language="python",
-)
+Xata offers two types of pagination:
+
+- cursor-based  is optimal for building next / prev navigation patterns.
+
+- offset-based is optimal for building 1..2..10...19..20 navigation patterns.
 
 
-st.markdown(
-    """
+st_xatadb_connection supports both types of pagination.
+Use the function `xata.query` to retrieve a page of records from your database. Save your response to a variable,
+then if you want to retrieve the next page of records, use the `next_page` function. Pass the response  to the `next_page` function,
+similarly you can use the `prev_page` function to retrieve the previous page of records.
 
-## Selecting Columns from the Linked Tables
+Here's an example of how to use the `next_page` function:
 
-The same syntax can be used to select columns from a linked table, therefore adding new columns to the response.
-For example, if you have a table called Users, and a table called Orders, and you want to retrieve the name of the user
-for each order, you can make a request like this:
-"""
-)
+''')
 
 st.code(
-    """
-results = xata.query("Orders", {"columns": ["id", "user.name"]})
-""",
-    language="python",
-)
+'''
+if 'results' not in st.session_state:
+    st.session_state.results = xata.query("Table_Name", {"page": {"size": 10}})
 
-st.markdown("You can do this transitively as well, for example:")
+st.write(st.session_state.results['records'])
 
-st.code(
-    """
-posts = xata.query("Posts", {
-  "columns": [
-    "title",
-    "author.*",
-    "author.team.*"
-  ]
-})
-""",
-    language="python",
-)
+if st.button("Next Page"):
+    st.session_state.results = xata.next_page("Table_Name", st.session_state.results, pagesize=10)
+
+
+''')
+
+st.markdown('''
+And similarly, you can use the `prev_page` function to retrieve the previous page of records.
+Below you can see an example of the code showing how to use the `next_page` function:
+''')
+
+if 'page' not in st.session_state:
+    st.session_state.page = xata.query("Users", {"page": {"size": 1}})
+
+st.write(st.session_state.page['records'])
+
+if st.button("Next Page"):
+    st.session_state.page = xata.next_page("Users", st.session_state.page, pagesize=1)
