@@ -17,7 +17,7 @@ the general form of a query is:"""
 
 st.code(
     """
-from st_xata_connection import XataConnection
+from st_xatadb_connection import XataConnection
 
 xata = st.connection('xata', type=XataConnection)
 
