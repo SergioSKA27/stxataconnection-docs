@@ -19,7 +19,7 @@ st.markdown('''
 ''', unsafe_allow_html=True)
 
 st.markdown('''
-<div style="text-align:center;padding-bottom:2.5rem;padding-top:2.5rem">
+<div style="text-align:center;padding-top:1.5rem">
 In the realm of web development, the combination of Xata and Streamlit is nothing short of a dream team. Xata,
 with its schemaless relational SQL database and simple REST API, provides a flexible and scalable foundation for storing
 and managing data. Streamlit, on the other hand, is an open-source framework that empowers developers to create
