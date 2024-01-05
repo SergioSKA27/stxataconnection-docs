@@ -8,7 +8,7 @@ xata = st.connection(
     "xata", type=XataConnection
 )
 
-st.title("Getting records")
+st.title("📖 Getting Records")
 
 st.markdown(
     """

@@ -6,7 +6,7 @@ initial_sidebar_state="collapsed", page_title="Streamlit Xata Connection", page_
 
 xata =  st.connection('xata',type=XataConnection)
 
-st.title('Image transformations')
+st.title('🖼️ Image Transformations')
 st.divider()
 st.markdown('''
 It is also possible to make transformations directly on any given image URL without knowledge of the record it is attached to.

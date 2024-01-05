@@ -6,7 +6,7 @@ initial_sidebar_state="collapsed", page_title="Streamlit Xata Connection", page_
 
 xata =  st.connection('xata',type=XataConnection)
 
-st.title('Error Handling')
+st.title('🚨 Error Handling')
 st.divider()
 
 st.markdown('''

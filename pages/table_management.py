@@ -6,7 +6,7 @@ initial_sidebar_state="collapsed", page_title="Streamlit Xata Connection", page_
 
 xata =  st.connection('xata',type=XataConnection)
 
-st.title('Table Management')
+st.title('📋 Table Management')
 st.divider()
 st.markdown('''
 With Xata, you can create, delete, and rename tables. You can also add and remove columns from tables.

@@ -7,7 +7,7 @@ initial_sidebar_state="collapsed", page_title="Streamlit Xata Connection", page_
 xata = st.connection('xata',type=XataConnection)
 
 
-st.title('Working with files')
+st.title('📁 File Attachments')
 st.divider()
 st.markdown('''
 All Xata record APIs can be used to create, read, update, delete and query files.

@@ -6,7 +6,7 @@ initial_sidebar_state="collapsed", page_title="Streamlit Xata Connection", page_
 
 xata = st.connection('xata', type=XataConnection)
 
-st.title("Updating records")
+st.title("📝 Updating Records")
 st.divider()
 st.markdown('''
 In order to do a partial update to a record, you can use a request like this:

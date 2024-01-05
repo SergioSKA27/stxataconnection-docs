@@ -7,7 +7,7 @@ initial_sidebar_state="collapsed", page_title="Streamlit Xata Connection", page_
 xata = st.connection('xata', type=XataConnection)
 
 
-st.title("Searching records")
+st.title("🔍 Searching Records")
 st.divider()
 st.markdown('''
 As you insert data into Xata, it is automatically indexed for full-text search.

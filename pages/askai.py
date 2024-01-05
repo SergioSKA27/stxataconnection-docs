@@ -12,7 +12,7 @@ client = xata._call_client()
 
 
 
-st.title('Asking questions of your data with AI')
+st.title('✈️ Asking questions of your data with AI')
 st.divider()
 
 st.markdown('''

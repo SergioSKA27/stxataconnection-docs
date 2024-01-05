@@ -6,7 +6,7 @@ initial_sidebar_state="collapsed", page_title="Streamlit Xata Connection", page_
 
 xata = st.connection('xata',type=XataConnection)
 
-st.title('Transactions')
+st.title('🔄 Transactions')
 st.divider()
 
 st.markdown('''

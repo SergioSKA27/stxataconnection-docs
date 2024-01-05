@@ -3,10 +3,16 @@ import streamlit as st
 st.set_page_config(layout="wide",
 initial_sidebar_state="collapsed", page_title="Streamlit Xata Connection", page_icon="🦋")
 
-st.title('Getting Started with st_xatadb_connection')
+st.title('🚀 Getting Started')
 
 st.markdown('''
 ---
+Welcome to the Streamlit Xata Connection tutorial! In this tutorial, we'll show you how to use the `st_xatadb_connection` package
+for connecting your Streamlit app to your Xata database. We'll cover the basics of using `st_xatadb_connection` to query your Xata database,
+insert, update, and delete data, work with files, perform transactions, and ask questions to the AI assistant.
+
+:blue[So let's get started!]
+
 ## 1. Set up your Xata.io and Streamlit Environment
 
 

@@ -6,7 +6,7 @@ initial_sidebar_state="collapsed", page_title="Streamlit Xata Connection", page_
 
 xata = st.connection('xata', type=XataConnection)
 
-st.title("Deleting records")
+st.title("🗑️ Deleting Records")
 st.divider()
 st.markdown('''
 To delete a record you can execute, for example:
