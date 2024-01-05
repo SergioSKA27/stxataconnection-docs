@@ -123,7 +123,7 @@ Here's an example of how to use the `next_page` function:
 
 st.code(
 '''
-if 'results' not in st.session_state:
+if 'results' not in st.session_state or st.session_state.results is None:
     st.session_state.results = xata.query("Table_Name", {"page": {"size": 10}})
 
 st.write(st.session_state.results['records'])
@@ -139,11 +139,16 @@ And similarly, you can use the `prev_page` function to retrieve the previous pag
 Below you can see an example of the code showing how to use the `next_page` function:
 ''')
 
-if 'page' not in st.session_state:
+if 'page' not in st.session_state or st.session_state.page is None:
     st.session_state.page = xata.query("Users", {"page": {"size": 1}})
+
 
 st.write(st.session_state.page['records'])
 
 if st.button("Next Page"):
-    st.session_state.page = xata.next_page("Users", st.session_state.page, pagesize=1)
+    st.session_state.page  = xata.next_page("Users", st.session_state.page, pagesize=1)
+    st.rerun()
+
+if st.button("Prev Page"):
+    st.session_state.page = xata.prev_page("Users", st.session_state.page, pagesize=1)
     st.rerun()
