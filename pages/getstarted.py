@@ -28,7 +28,7 @@ To securely store your Xata API key and database URL, you can use Streamlit's se
 
 st.code("""
 XATA_API_KEY = "YOUR_XATA_API_KEY"
-DATABASE_URL = "YOUR_XATA_DATABASE_URL"
+XATA_DB_URL = "YOUR_XATA_DATABASE_URL"
 """,language='toml')
 
 st.markdown('''
