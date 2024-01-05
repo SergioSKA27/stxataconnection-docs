@@ -20,6 +20,11 @@ The following are instances of working with data, including retrieving, selectin
 ''')
 
 st.code(r"""
+import streamlit as st
+from st_xatadb_connection import XataConnection
+
+xata = st.connection('xata',type=XataConnection)
+
 records = xata.sql_query("SELECT * FROM \"teams\"")
 """)
 
