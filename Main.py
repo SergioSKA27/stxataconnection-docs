@@ -1,7 +1,33 @@
 import streamlit as st
+from st_pages import Page,show_pages
 
 st.set_page_config(layout="wide",
 initial_sidebar_state="collapsed", page_title="Streamlit Xata Connection")
+
+show_pages(
+    [
+        Page("Main.py", "Home", "🏠"),
+        Page("pages/getstarted.py", "Getting Started", "🚀"),
+        Page("pages/gettingrecords.py", "Getting Records", "📖"),
+        Page("pages/insertingrecs.py", "Inserting Records", "📝"),
+        Page("pages/updatingrecs.py", "Updating Records", "📝"),
+        Page("pages/delrecords.py", "Deleting Records", "🗑️"),
+        Page("pages/searchrecs.py", "Searching Records", "🔍"),
+        Page("pages/summarize.py", "Summarizing Data", "📊"),
+        Page("pages/transactions.py", "Transactions", "💰"),
+        Page("pages/sql.py", "SQL Queries", "🔍"),
+        Page("pages/askai.py", "Ask AI", "🤖"),
+        Page("pages/files.py", "File Attachments", "📁"),
+        Page("pages/images.py", "Images transformations", "🖼️"),
+        Page("pages/aggregations.py", "Aggregations", "📊"),
+        Page("pages/vectorsearch.py", "Vector Search", "🔍"),
+        Page("pages/Helpers.py", "Helpers", "🛠️"),
+        Page("pages/table_management.py", "Table Management", "📋"),
+        Page("pages/errorhandling.py", "Error Handling", "🚨"),
+
+    ]
+)
+
 
 st.markdown('''
 <h1 style="font-family:Courier; text-align:center;">Streamlit Xata Data Base Connection
