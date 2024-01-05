@@ -195,7 +195,6 @@ st.code("""
   ]
 }""",language='json')
 
-
 st.markdown('''
 ---
 ## Conclusion
@@ -216,4 +215,5 @@ We also encourage you to check out the `st_xatadb_connection` GitHub repository 
 Thank you for reading this article!<br> We hope you found it useful and that it will help you build amazing data-driven web applications with Xata and Streamlit.
 </div>
 ''',unsafe_allow_html=True)
+
 st.caption('By: Sergio Demis Lopez Martinez')
