@@ -60,8 +60,10 @@ results = xata.aggregate("titles", {
 """)
 
 st.markdown("""
-Additionally, certain aggregation types support internal filters to apply on records before calculating aggregate values.
-Refer to the aggregation type's documentation sections below for more details.
+The code above combines three aggregations: topValues, dateHistogram and average. The topValues aggregations splits th
+e data into buckets based on the genre column, and takes the top 50 genres by the number of movies in each.
+The dateHistogram aggregation splits the data into buckets based on the releaseDate column,
+and groups the data by calendaristic year. The average aggregation is a metric aggregation that is executed on the resulting buckets.
 
 For more information on the Aggregation API, please refer to the [documentation](https://docs.xata.io/sdk/aggregate).
 """)
