@@ -1,6 +1,11 @@
 import streamlit as st
 from st_xatadb_connection import XataConnection
 
+
+
+st.set_page_config(layout="wide",
+initial_sidebar_state="collapsed", page_title="Streamlit Xata Connection", page_icon="🦋")
+
 xata = st.connection('xata',type=XataConnection)
 client = xata._call_client()
 
