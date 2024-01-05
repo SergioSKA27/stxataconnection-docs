@@ -3,6 +3,7 @@ from st_xatadb_connection import XataConnection
 
 xata = st.connection('xata',type=XataConnection)
 st.title("Summarize")
+st.title()
 
 st.markdown("""
 The summarize endpoint is used to run calculations on your data.
