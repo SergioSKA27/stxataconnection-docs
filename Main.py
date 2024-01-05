@@ -2,7 +2,7 @@ import streamlit as st
 from st_pages import Page,show_pages
 
 st.set_page_config(layout="wide",
-initial_sidebar_state="collapsed", page_title="Streamlit Xata Connection", page_icon="🦋")
+initial_sidebar_state="collapsed", page_title="Streamlit Xata Connection")
 
 show_pages(
     [

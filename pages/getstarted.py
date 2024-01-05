@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(layout="wide",
-initial_sidebar_state="collapsed", page_title="Streamlit Xata Connection", page_icon="🦋")
+initial_sidebar_state="collapsed", page_title="Streamlit Xata Connection",)
 
 st.title('🚀 Getting Started')
 
