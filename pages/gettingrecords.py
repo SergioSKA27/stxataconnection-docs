@@ -18,6 +18,7 @@ the general form of a query is:"""
 st.code(
     """
 from st_xatadb_connection import XataConnection
+import streamlit as st
 
 xata = st.connection('xata', type=XataConnection)
 

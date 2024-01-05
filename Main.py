@@ -92,7 +92,7 @@ Here's a sneak peek into how incredibly simple it is to use st_xatadb_connection
 
 st.code("""
 import streamlit as st
-from st_xata_connection import XataConnection
+from st_xatadb_connection import XataConnection
 
 # Connect to your Xata.io database
 xata = st.connection('xata', type=XataConnection)
