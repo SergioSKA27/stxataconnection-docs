@@ -4,7 +4,7 @@ from st_xatadb_connection import XataConnection
 xata = st.connection('xata', type=XataConnection)
 
 st.title("Deleting records")
-
+st.divider()
 st.markdown('''
 To delete a record you can execute, for example:
 ''')
