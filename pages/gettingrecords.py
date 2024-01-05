@@ -129,7 +129,7 @@ st.write(st.session_state.results['records'])
 
 if st.button("Next Page"):
     st.session_state.results = xata.next_page("Table_Name", st.session_state.results, pagesize=10)
-
+    st.rerun()
 
 ''')
 
@@ -145,3 +145,4 @@ st.write(st.session_state.page['records'])
 
 if st.button("Next Page"):
     st.session_state.page = xata.next_page("Users", st.session_state.page, pagesize=1)
+    st.rerun()
