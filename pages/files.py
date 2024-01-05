@@ -5,7 +5,7 @@ xata = st.connection('xata',type=XataConnection)
 
 
 st.title('Working with files')
-
+st.divider()
 st.markdown('''
 All Xata record APIs can be used to create, read, update, delete and query files.
 ''')
@@ -134,7 +134,7 @@ response = xata.delete_file("table_name", "record_id", "column_name")
 st.subheader('Delete a file from an array using file API')
 st.write('Column type is file[] (file array). fileId is required to identify the array item to be deleted.')
 st.code(r"""
-response = xata.delete_file_from_array"table_name", "record_id", "column_name", "file_id")
+response = xata.delete_file_from_array("table_name", "record_id", "column_name", "file_id")
 """)
 
 st.markdown('''

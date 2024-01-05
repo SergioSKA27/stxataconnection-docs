@@ -4,6 +4,7 @@ from st_xatadb_connection import XataConnection
 xata = st.connection('xata', type=XataConnection)
 
 st.title("Inserting records")
+st.divider()
 
 st.markdown('''
 Once you've connected to your Xata.io database and queried your data, you can use st_xatadb_connection to insert new records into your database.

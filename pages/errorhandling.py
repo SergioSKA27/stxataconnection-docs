@@ -43,4 +43,11 @@ st.markdown('''
 If the response is not successful, the exception will be raised and you can handle it in the except block.
 You can check the status code and the message of the exception to understand what went wrong.
 See more about the status codes in the [Xata documentation](https://xata.io/docs/rest-api#responses).
+
+#### Calling the Xata client to debug
+
+If you are still having trouble, you can call the Xata client directly to debug.
+
+Use the `xata._call_client()` function to call the Xata client directly.Then you have access to the full Xata client and can call any method you want.
+Remember that the Xata client instance is not persistent and you can't use in session state.
 ''')

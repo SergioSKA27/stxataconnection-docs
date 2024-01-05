@@ -4,6 +4,7 @@ from st_xatadb_connection import XataConnection
 xata = st.connection('xata', type=XataConnection)
 
 st.title('Similarity / vector search')
+st.divider()
 st.warning("This feature is Beta. It is still under active development. While we are avoiding breaking changes, we do not guarantee backwards compatibility until the functionality is GA.")
 
 st.markdown('''

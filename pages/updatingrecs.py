@@ -4,7 +4,7 @@ from st_xatadb_connection import XataConnection
 xata = st.connection('xata', type=XataConnection)
 
 st.title("Updating records")
-
+st.divider()
 st.markdown('''
 In order to do a partial update to a record, you can use a request like this:
 ''')

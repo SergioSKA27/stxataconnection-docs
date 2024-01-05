@@ -4,6 +4,7 @@ from st_xatadb_connection import XataConnection
 xata =  st.connection('xata',type=XataConnection)
 
 st.title('Image transformations')
+st.divider()
 st.markdown('''
 It is also possible to make transformations directly on any given image URL without knowledge of the record it is attached to.
 

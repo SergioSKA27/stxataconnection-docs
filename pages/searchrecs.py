@@ -5,7 +5,7 @@ xata = st.connection('xata', type=XataConnection)
 
 
 st.title("Searching records")
-
+st.divider()
 st.markdown('''
 As you insert data into Xata, it is automatically indexed for full-text search.
 You can run a search by using the search endpoint. While the query endpoint exists only at the table level,
