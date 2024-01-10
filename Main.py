@@ -113,7 +113,7 @@ Here's a sneak peek into how incredibly simple it is to use <b>st_xatadb_connect
 
 st.code("""
 import streamlit as st
-from <b>st_xatadb_connection</b> import XataConnection
+from st_xatadb_connection import XataConnection
 
 # Connect to your Xata.io database
 xata = st.connection('xata', type=XataConnection)
@@ -208,7 +208,7 @@ if cols[1].button('🚀 Get Started with Xata and Streamlit',use_container_width
     switch_page("Getting_Started")
 
 st.markdown('''
-### Check the Demo Apps Below to See <b>st_xatadb_connection</b> in Action!
+### Check Out the Demo Apps Below to See <b>st_xatadb_connection</b> in Action!
 
 - [Simple Gallery App](https://st-gallery-xata-demo.streamlit.app/)
 
