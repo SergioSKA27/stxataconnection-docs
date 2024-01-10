@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit_extras.switch_page_button import switch_page
 
 st.set_page_config(layout="wide",
 initial_sidebar_state="collapsed", page_title="Streamlit Xata Connection", page_icon="🦋")
@@ -199,14 +200,20 @@ real-time monitoring application, this dynamic duo has you covered.
 
 So, let your creativity soar and embark on your next web development project with confidence, knowing that Xata
 and Streamlit will be your trusty companions every step of the way.
+''',unsafe_allow_html=True)
 
+cols = st.columns([0.3,0.4,0.3])
+
+if cols[1].button('🚀 Get Started with Xata and Streamlit',use_container_width=True):
+    switch_page("Getting_Started")
+
+st.markdown('''
 ### Check the Demo Apps Below to See <b>st_xatadb_connection</b> in Action!
 
 - [Simple Gallery App](https://st-gallery-xata-demo.streamlit.app/)
 
 - [Personal Cloud Storage App](https://st-xata-personal-cloud-demo.streamlit.app/)
-
-
 ''',unsafe_allow_html=True)
+
 
 st.divider()

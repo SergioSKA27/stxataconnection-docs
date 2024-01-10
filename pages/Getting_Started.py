@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(layout="wide",
-initial_sidebar_state="collapsed", page_title="Streamlit Xata Connection",)
+initial_sidebar_state="collapsed", page_title="Streamlit Xata Connection", page_icon="🦋")
 st.markdown('''
 <style>
     .bg-image {
