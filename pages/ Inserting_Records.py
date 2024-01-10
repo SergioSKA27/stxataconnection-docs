@@ -66,3 +66,4 @@ file and file[] (file array) columns are not permitted in bulk requests.
 For more information, see the [Xata API docs](https://xata.io/docs/sdk/insert).
 ''')
 
+st.divider()

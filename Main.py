@@ -142,11 +142,11 @@ Xata Free is a Free Cloud Database!
 
 This cloud-based database offers an impressive array of features, all available for free:
 
-- **10 Database Branches**: Xata allows you to create and maintain up to 10 database branches, enabling you to experiment
+ **10 Database Branches**: Xata allows you to create and maintain up to 10 database branches, enabling you to experiment
 with different schemas and data structures without affecting your production data.
 
 - **15 GB of Free Storage**: Xata provides a generous 15 GB of storage space for your data, allowing you to store a
-substantial amount of information without worrying about exceeding limits.
+substantial amount of in-formation without worrying about exceeding limits.
 
 - **15 GB of Search Engine Storage**: Xata also offers 15 GB of dedicated storage for its powerful search engine.
 This ensures that your data is indexed and easily searchable, making it a breeze to find the information you need.
@@ -161,7 +161,7 @@ enabling you to leverage artificial intelligence to extract insights from your d
 With all these features available for free, Xata is the perfect choice for startups, individual developers,
 and anyone looking for a powerful and cost-effective database solution.
 
-For more information about Xata Free, visit the [Xata Free](https://xata.io/pricing/) page
+For more information about Xata Free and its features, visit the [Xata](https://xata.io/pricing/) page
 <div style="text-align:center;font-family: Courier">
 Join the growing community of developers who have chosen Xata as their trusted database partner.
 Unleash your creativity and build amazing things with Xata!

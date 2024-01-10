@@ -28,3 +28,4 @@ st.markdown('''
     for more information about the delete endpoint, see the [API reference](https://xata.io/docs/sdk/delete).
 ''')
 
+st.divider()

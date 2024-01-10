@@ -29,6 +29,12 @@ img = xata.image_transform("https://us-east-1.storage.xata.sh/4u1fh2o6p10blbutjn
 })
 """)
 
+cols = st.columns([0.2,0.3,0.3,0.2])
+cols[1].image("https://us-east-1.storage.xata.sh/4u1fh2o6p10blbutjnphcste94",caption="Original Image")
+cols[2].image("https://us-east-1.storage.xata.sh/transform/rotate=180,height=100/4u1fh2o6p10blbutjnphcste94",caption="Transformed Image")
+
 st.markdown('''
 For more information on the available transformations, see the [Xata documentation](https://xata.io/docs/sdk/image-transformations).
 ''')
+
+st.divider()
