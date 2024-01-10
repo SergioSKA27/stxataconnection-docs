@@ -188,3 +188,5 @@ and Streamlit will be your trusty companions every step of the way.
 
 
 ''',unsafe_allow_html=True)
+
+st.divider()

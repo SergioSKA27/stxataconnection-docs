@@ -37,7 +37,7 @@ st.markdown('''
 Note that the `transaction()` function takes a list of operations as an argument. Each operation is a dictionary that contains
 the type of operation and the operation-specific arguments. The supported operations are `insert`, `update`, `get`, and `delete`.
 
-If successful, you can be certain that all operations have succeeded. You will receive a response like below:
+If the transaction is successful, you can be certain that all operations have succeeded. You will receive a response like below:
 
 ''')
 
