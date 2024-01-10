@@ -1,12 +1,12 @@
 import streamlit as st
 
 st.set_page_config(layout="wide",
-initial_sidebar_state="collapsed", page_title="Streamlit Xata Connection")
+initial_sidebar_state="collapsed", page_title="Streamlit Xata Connection", page_icon="🦋")
 
 
 st.markdown('''
 <h1 style="font-family:Courier; text-align:center;">Streamlit Xata Data Base Connection
-</h1>🦋
+</h1>
 ''',unsafe_allow_html=True)
 #<img src="https://streamlit.io/images/brand/streamlit-logo-primary-colormark-darktext.svg" width="100" height="50" align-items="center"/>
 
@@ -19,7 +19,7 @@ st.markdown('''
 ''', unsafe_allow_html=True)
 
 st.markdown('''
-<div style="text-align:center;padding-top:1.5rem">
+<div style="text-align:center;padding-top:1rem">
 In the realm of web development, the combination of Xata and Streamlit is nothing short of a dream team. Xata,
 with its schemaless relational SQL database and simple REST API, provides a flexible and scalable foundation for storing
 and managing data. Streamlit, on the other hand, is an open-source framework that empowers developers to create
@@ -53,10 +53,10 @@ Its cloud-based architecture can seamlessly scale up or down as your data grows 
 
 st.markdown('''
 
-### The st_xatadb_connection Package: Simplifying the Integration Process
+### The <b>st_xatadb_connection</b> Package: Simplifying the Integration Process
 
 <div style="text-align:justify">
-To further enhance the synergy between Xata and Streamlit, I've created the st_xatadb_connection package.
+To further enhance the synergy between Xata and Streamlit, I've created the <b>st_xatadb_connection</b> package.
 This package provides a seamless bridge between the two tools, making it incredibly easy to connect your Streamlit
 application to your Xata database.
 </div>
@@ -64,18 +64,18 @@ application to your Xata database.
 <div style="text-align:justify;padding-bottom:10px">
 With just a few lines of code, you can perform CRUD operations (create, retrieve, update, delete) on your Xata data,
 generate reports and visualizations, and even interact with your data in real time.
-The st_xatadb_connection package takes care of all the heavy lifting, allowing you to focus on building your application's functionality.
+The <b>st_xatadb_connection</b> package takes care of all the heavy lifting, allowing you to focus on building your application's functionality.
 </div>
 
-##### The Simplicity of st_xatadb_connection: Building Apps with Xata and Streamlit
+##### The Simplicity of <b>st_xatadb_connection</b>: Building Apps with Xata and Streamlit
 
 <div style="text-align:justify">
-st_xatadb_connection is the ultimate game-changer for developers looking to build data-driven web applications with
+<b>st_xatadb_connection</b> is the ultimate game-changer for developers looking to build data-driven web applications with
 Xata and Streamlit. Its intuitive API and powerful features make it a breeze to connect to your Xata database and
 start working with your data.
 </div>
 
-With st_xatadb_connection, you can:
+With <b>st_xatadb_connection</b>, you can:
 
 - Set your Xata credentials securely in Streamlit's secrets manager or environment variables.
 
@@ -85,14 +85,14 @@ With st_xatadb_connection, you can:
 
 - Display your query results in Streamlit with just a few clicks.
 
-Here's a sneak peek into how incredibly simple it is to use st_xatadb_connection:
+Here's a sneak peek into how incredibly simple it is to use <b>st_xatadb_connection</b>:
 
 </div>''' ,unsafe_allow_html=True)
 
 
 st.code("""
 import streamlit as st
-from st_xatadb_connection import XataConnection
+from <b>st_xatadb_connection</b> import XataConnection
 
 # Connect to your Xata.io database
 xata = st.connection('xata', type=XataConnection)
@@ -108,27 +108,25 @@ st.write(results)
 st.markdown('''
 That's it! With just a few lines of code, you've created a fully functional web application that displays data from your Xatadatabase.
 
-Benefits of using st_xatadb_connection:
+Benefits of using <b>st_xatadb_connection</b>:
 
-- Effortless Setup: st_xatadb_connection's intuitive API makes it incredibly easy to set up and configure.
+- Effortless Setup: <b>st_xatadb_connection</b>'s intuitive API makes it incredibly easy to set up and configure.
 You can connect to your Xata.io database and start querying your data in minutes.
 
-- Seamless Integration: st_xatadb_connection integrates seamlessly with Streamlit, allowing you to effortlessly display
+- Seamless Integration: <b>st_xatadb_connection</b> integrates seamlessly with Streamlit, allowing you to effortlessly display
 your query results in interactive visualizations and dashboards.
 
-- Accelerated Development: st_xatadb_connection's streamlined API and pre-built functions enable rapid development,
+- Accelerated Development: <b>st_xatadb_connection</b>'s streamlined API and pre-built functions enable rapid development,
 saving you valuable time and effort.
 
-##### Unlock the Power of st_xatadb_connection Today!
-
 <div style="text-align:justify">
-st_xatadb_connection is the key to unlocking the full potential of Xata and Streamlit. With its user-friendly
+<b>st_xatadb_connection</b> is the key to unlocking the full potential of Xata and Streamlit. With its user-friendly
 interface and robust capabilities, it's the perfect tool for building data-driven web applications that are both
 powerful and easy to use.
 </div>
 
 <div style="text-align:center;font-family: Courier">
-Experience the simplicity and efficiency of st_xatadb_connection firsthand. Try it out today and see how effortlessly
+Experience the simplicity and efficiency of <b>st_xatadb_connection</b> firsthand. Try it out today and see how effortlessly
 you can build amazing web applications with Xata and Streamlit!
 </div>
 ''' ,unsafe_allow_html=True)
@@ -175,9 +173,18 @@ Unleash your creativity and build amazing things with Xata!
 st.markdown('''
 ### Unleashing Your Creativity with Xata and Streamlit
 <div style="text-align:justify">
-The possibilities are endless when you combine the power of Xata and Streamlit, amplified by the st_xatadb_connection
+The possibilities are endless when you combine the power of Xata and Streamlit, amplified by the <b>st_xatadb_connection</b>
 package. Whether you're building a customer relationship management (CRM) system, a data visualization dashboard, or a
 real-time monitoring application, this dynamic duo has you covered.
 
 So, let your creativity soar and embark on your next web development project with confidence, knowing that Xata
-and Streamlit will be your trusty companions every step of the way.''',unsafe_allow_html=True)
+and Streamlit will be your trusty companions every step of the way.
+
+### Check the Demo Apps Below to See <b>st_xatadb_connection</b> in Action!
+
+- [Simple Gallery App](https://st-gallery-xata-demo.streamlit.app/)
+
+- [Personal Cloud Storage App](https://st-xata-personal-cloud-demo.streamlit.app/)
+
+
+''',unsafe_allow_html=True)
