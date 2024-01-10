@@ -213,6 +213,8 @@ st.markdown('''
 - [Simple Gallery App](https://st-gallery-xata-demo.streamlit.app/)
 
 - [Personal Cloud Storage App](https://st-xata-personal-cloud-demo.streamlit.app/)
+
+- [Chat Room App](https://st-chat-room-xata-demo.streamlit.app/)
 ''',unsafe_allow_html=True)
 
 
